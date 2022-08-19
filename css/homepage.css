@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wordcolor{
+    color: orange;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../belinda-fewings-6wAGwpsXHE0-unsplash.jpg");
+    background-size: cover;
+
+}
+
+.bar{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(3, 39, 156, 0.562);
+    padding-left: 10%;
+    padding-right: 7%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 20px 0px;
+    
+}
+
+.navbar{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.one{
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+
+.two{
+    height: 100%;
+    width: 20%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three{
+    height: 100%;
+    width: 20%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four{
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.five{
+    height: 100%;
+    width: 20%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.contactpage{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    display: none;
+}
+
+.homeRight{
+    width: 70%;
+    height: 70%;
+    background-color: rgba(3, 39, 156, 0.562);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 8px 6px 4px black;
+    padding: 10px;
+    color: white;
+}
+
+.right{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left{
+    width: 50%;
+    height: 100%; 
+    display: flex;
+
+}
+
+.homepath{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    background-color: rgba(3, 39, 156, 0.562);
+    clip-path: polygon(0 0, 100% 100%, 100% 100%, 67% 100%, 0 100%, 0 0);
+}
+
+.loginpath{
+    width: 100%;
+    height: 100%; 
+    display: none;
+    background-color: rgba(3, 39, 156, 0.562);
+    clip-path: polygon(30% 0, 100% 50%, 36% 100%, 0 100%, 67% 52%, 0 0);
+}
+
+.contactpath{
+    width: 100%;
+    height: 100%; 
+    display: none;
+    background-color: rgba(3, 39, 156, 0.562);
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+
+/* login page */
+.login{
+    display: none;
+    width: 80%;
+    height: 80%;
+    background-color:rgba(3, 39, 156, 0.562);
+    opacity: 0.9;
+    box-shadow: 1px 8px 6px 4px black;
+    border-radius: 20px;
+    color: white;
+    z-index: 0;
+}
+
+.login h1{
+    padding: 40px;
+}
+
+.login hr{
+    display: flex;
+    margin: 5px;
+    border: 2px solid orange;
+    width: 20%;
+}
+
+form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 80%;
+    height: 10%;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 24;
+    color: white;
+    border-bottom: 2px solid orange;
+    border-radius: 10px 10px 0 0;
+  
+}
+
+input:focus{
+    background: white;
+    color: black;
+}
+
+label{
+    margin-top: 20px;
+    font-weight: 900;
+}
+.subtn{
+    width: 25%;
+    height: 10%;
+    margin-top: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: none;
+}
+
+.subtn:hover{
+    width: 28%;
+    height: 15%;
+    
+}
+.navbarsmall{
+    display: none;
+}
+.navbtn{
+    display: none;
+}
+.backbtn{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .bar{
+        padding-right: 0%;
+        
+    }
+    .navbar{
+        display: none;
+    }
+    .navbarsmall{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 90%;
+       background-color: rgba(3, 39, 156, 0.562);
+       z-index: 1;
+    }
+    .navbtn{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blueviolet;
+        border-radius: 0 0 20px 0;
+        cursor: pointer;
+    }
+
+    .closebtn{
+        display: none;
+    }
+    
+    .btn{
+        width: 100%;
+        background-color: none;
+        opacity: 0.79;
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+
+    }
+
+    .btn:active{
+        opacity: 1;
+    }
+
+
+    .left{
+        display: none;
+        
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+
+    .subtn{
+        border-radius: 15px;
+    }
+}
+
+
+
+/* .backbtn{
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 0 0 20px  0; 
+    cursor: pointer;
+     z-index: 200; 
+}
+ */
